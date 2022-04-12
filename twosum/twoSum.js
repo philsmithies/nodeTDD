@@ -12,14 +12,11 @@ const twoSum = (array, target) => {
   for (i = 0; i < array.length; i++) {
     for (counter = 0; counter < array.length; counter++) {
       if (array[i] + array[counter] === target) {
-        result = [i, counter];
+        result = [counter, i];
       }
     }
   }
-  console.log("result is", result);
   return result;
 };
-
-twoSum([1, 3], 4);
 
 module.exports = twoSum;
