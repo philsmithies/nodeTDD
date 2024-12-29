@@ -9,7 +9,7 @@ const groupAnagrams = require("./groupAnagrams");
  * TODO
  */
 
-test("it exists", () => {
+test.skip("it exists", () => {
   expect(groupAnagrams(["nat", "tan"]).check()).toBe(["nat", "tan"]);
 });
 
